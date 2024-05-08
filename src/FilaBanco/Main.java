@@ -7,7 +7,7 @@ public class Main {
             Banco banco = new Banco(numCaixas); // número de caixas
 
             long inicio = System.currentTimeMillis();
-            while (System.currentTimeMillis() - inicio < 300000) { // 5 minutos
+            while (System.currentTimeMillis() - inicio < 720000) { // 5 minutos
                 Thread.sleep((int)(Math.random() * 45000 + 5000)); // intervalo de chegada
                 banco.adicionarCliente(new Cliente(System.currentTimeMillis(), (int)(Math.random() * 90000 + 30000))); // tempo de atendimento
             }
